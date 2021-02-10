@@ -42,7 +42,9 @@ void SSD1306_DEBUG_MON::writeln(char* v)
 void SSD1306_DEBUG_MON::print(char* v)
 {
     _display.clearDisplay();
+    _display.setCursor(0, 0);
     _display.print(v);
+    _display.display();
 }
 
 void SSD1306_DEBUG_MON::begin()
@@ -61,8 +63,8 @@ void SSD1306_DEBUG_MON::begin()
     _display.setTextColor(SSD1306_WHITE); // Draw white text
     _display.setCursor(0, 0);     // Start at middle
     _display.cp437(true);
-    _display.writeln("SSD1306");
-    _display.writeln("Debug Monitor");
+    _display.println("SSD1306");
+    _display.println("Debug Monitor");
     _display.setTextSize(1);
     _display.write("v0.9.2");
     _display.display();
