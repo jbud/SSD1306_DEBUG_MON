@@ -9,5 +9,5 @@ This is a library for a Monochrome OLEDs based on SSD1306 drivers running I2C in
   
   
 ## Implementation
-Very easy to implement, simply run include the header, run the constructor, and call begin() in setup(). then you can writeln() anything or just print a single value repeatedly.
+Very easy to implement, simply run include the header, run the constructor, and call begin() in setup(). then you can writeln() anything or just print() a single value repeatedly.
 
